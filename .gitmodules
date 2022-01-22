@@ -1,0 +1,21 @@
+[submodule ".zsh/powerlevel10k"]
+	path = .zsh/powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+[submodule ".zsh/zsh-syntax-highlighting"]
+	path = .zsh/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule ".zsh/zsh-autosuggestions"]
+	path = .zsh/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
+[submodule ".vim/pack/plugins/start/fugitive"]
+	path = .vim/pack/plugins/start/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/pack/plugins/start/vim-airline"]
+	path = .vim/pack/plugins/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule ".vim/pack/plugins/start/vim-polyglot"]
+	path = .vim/pack/plugins/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot.git
+[submodule ".vim/pack/plugins/start/nerdtree"]
+	path = .vim/pack/plugins/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
