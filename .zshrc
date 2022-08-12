@@ -11,11 +11,11 @@ zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}
 zstyle :compinstall filename '~/.zshrc'
 
 autoload -Uz compinit
-compinit -d ~/.zsh/.zcompdump
+compinit -d ~/.zsh/zcompdump
 
 # End of lines added by compinstall
 # Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh/.history
+HISTFILE=~/.zsh/history
 HISTSIZE=1000
 SAVEHIST=1000
 setopt extendedglob
@@ -31,8 +31,8 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export LESSHISTFILE=-
 
-alias ls='ls --color=auto -F'
-alias ll='ls --color=auto -alFh'
-alias la='ls --color=auto -A'
-alias l='ls --color=auto -CF'
-alias grep='grep --color=auto'
+alias ls='ls --color -F'
+alias ll='ls --color -alFh'
+alias la='ls --color -A'
+alias l='ls --color -CF'
+alias grep='grep --color'
