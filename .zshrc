@@ -1,38 +1,26 @@
+# Set directory variables
+ZSH_CACHE="${XDG_CACHE_HOME:-${HOME}/.cache}"
+ZSH_CONFIG="${XDG_CONFIG_HOME:-${HOME}/.config}/zsh"
+ZSH_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zsh"
+ZINIT_HOME="${ZSH_HOME}/zinit"
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+if [[ -r "${ZSH_CACHE}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${ZSH_CACHE}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# The following lines were added by compinstall
-zstyle ':completion:*' menu select completer _expand _complete _ignored _correct _approximate
-zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}'
-zstyle :compinstall filename '~/.zshrc'
+# Source configuration files
+source "${ZSH_CONFIG}/plugins.zsh"     # zinit plugins
+source "${ZSH_CONFIG}/p10k.zsh"        # Powerlevel10k, `p10k configure` to modify
+source "${ZSH_CONFIG}/keybinds.zsh"    # Keybinds
+source "${ZSH_CONFIG}/completions.zsh" # Completions engine
+source "${ZSH_CONFIG}/history.zsh"     # History related settings
+source "${ZSH_CONFIG}/aliases.zsh"     # Command aliases
+source "${ZSH_CONFIG}/misc.zsh"        # Miscellaneous configs
 
-autoload -Uz compinit
-compinit -d ~/.zsh/zcompdump
+# Shell third-party integrations
+eval "$(fzf --zsh)"
+eval "$(zoxide init zsh --cmd j)"
 
-# End of lines added by compinstall
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.zsh/history
-HISTSIZE=1000
-SAVEHIST=1000
-setopt extendedglob
-bindkey -v
-# End of lines configured by zsh-newuser-install
-
-source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.zsh/p10k.zsh ]] || source ~/.zsh/p10k.zsh
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-export LESSHISTFILE=-
-
-alias ls='ls --color -F'
-alias ll='ls --color -alFh'
-alias la='ls --color -A'
-alias l='ls --color -CF'
-alias grep='grep --color'
