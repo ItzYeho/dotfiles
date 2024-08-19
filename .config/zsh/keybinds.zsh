@@ -20,3 +20,6 @@ bindkey '^[[B' history-search-forward  # Down arrow, searches inside commands
 bindkey '^[[1;5A' up-history           # Ctrl+Up, search the history
 bindkey '^[[1;5B' down-history         # Ctrl+Down, search the history
 
+# File completer
+bindkey '^[[Z' complete-files
+
