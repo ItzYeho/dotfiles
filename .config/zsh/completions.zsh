@@ -34,22 +34,21 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' menu select
 
 # FZF completion previews
-FZF_LS_PREVIEW='ls --color $realpath'
-FZF_BAT_PREVIEW='bat -pp --color=always --line-range=:500 $realpath'
+FZF_PREVIEW="$ZSH_SCRIPTS/fzf_tab_preview.zsh \$realpath"
 
 # ls & cd
-zstyle ':fzf-tab:complete:ls:*' fzf-preview $FZF_LS_PREVIEW
-zstyle ':fzf-tab:complete:cd:*' fzf-preview $FZF_LS_PREVIEW
-zstyle ':fzf-tab:complete:j:*' fzf-preview $FZF_LS_PREVIEW
+zstyle ':fzf-tab:complete:ls:*' fzf-preview $FZF_PREVIEW
+zstyle ':fzf-tab:complete:cd:*' fzf-preview $FZF_PREVIEW
+zstyle ':fzf-tab:complete:j:*' fzf-preview $FZF_PREVIEW
 
 # cat & bat
-zstyle ':fzf-tab:complete:cat:*' fzf-preview $FZF_BAT_PREVIEW
-zstyle ':fzf-tab:complete:bat:*' fzf-preview $FZF_BAT_PREVIEW
+zstyle ':fzf-tab:complete:cat:*' fzf-preview $FZF_PREVIEW
+zstyle ':fzf-tab:complete:bat:*' fzf-preview $FZF_PREVIEW
 
 # editors
-zstyle ':fzf-tab:complete:nano:*' fzf-preview $FZF_BAT_PREVIEW
-zstyle ':fzf-tab:complete:vim:*' fzf-preview $FZF_BAT_PREVIEW
-zstyle ':fzf-tab:complete:nvim:*' fzf-preview $FZF_BAT_PREVIEW
+zstyle ':fzf-tab:complete:nano:*' fzf-preview $FZF_PREVIEW
+zstyle ':fzf-tab:complete:vim:*' fzf-preview $FZF_PREVIEW
+zstyle ':fzf-tab:complete:nvim:*' fzf-preview $FZF_PREVIEW
 
 # Load completions engine
 autoload -Uz compinit

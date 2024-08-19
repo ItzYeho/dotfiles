@@ -1,6 +1,7 @@
 # Set directory variables
 ZSH_CACHE="${XDG_CACHE_HOME:-${HOME}/.cache}"
 ZSH_CONFIG="${XDG_CONFIG_HOME:-${HOME}/.config}/zsh"
+ZSH_SCRIPTS="${ZSH_CONFIG}/scripts"
 ZSH_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zsh"
 ZINIT_HOME="${ZSH_HOME}/zinit"
 
