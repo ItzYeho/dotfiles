@@ -1,3 +1,24 @@
+# Files completer fallback
+# TODO: Make it work with FZF-TAB previews
+function _complete_file_fallback() {
+    local ret=1
+
+    # Try normal ZSH completion
+    _complete
+
+    # If we got any matches, continue
+    if [[ $compstate[nmatches] -gt 0 ]]; then
+      ret=0
+
+    # We didn't get any matches, use _files
+    else
+      _files
+      ret=$?
+    fi
+
+    return $ret
+}
+
 # File completion fallback
 zle -C complete-files complete-word _generic
 zstyle ':completion:complete-files:*' completer _files
