@@ -6,4 +6,3 @@ export EDITOR="vim"
 
 # Disable less file history
 export LESSHISTFILE=-
-

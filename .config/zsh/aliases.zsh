@@ -4,6 +4,7 @@ alias vi='vim'
 # GNU enhancers
 alias ls='ls -F --color'
 alias grep='grep --color'
+alias ip='ip --color'
 
 # ls shortcuts
 alias l='ls -CF'
@@ -12,4 +13,3 @@ alias ll='ls -al'
 
 # cat enhancements
 alias cat='bat -pp'
-

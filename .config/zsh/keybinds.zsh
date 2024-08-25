@@ -22,4 +22,3 @@ bindkey '^[[1;5B' down-history         # Ctrl+Down, search the history
 
 # File completer
 bindkey '^[[Z' complete-files
-

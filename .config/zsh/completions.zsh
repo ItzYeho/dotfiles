@@ -26,35 +26,19 @@ zstyle ':completion:complete-files:*' completer _files
 # Completion engine settings
 zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _correct _approximate _prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
-
-# Color file completions like LS colors
-zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
-
-# Use FZF for completions
 zstyle ':completion:*' menu select
 
-# FZF completion previews
-FZF_PREVIEW="$ZSH_SCRIPTS/fzf_tab_preview.zsh \$realpath"
+# Color file completions like LS colors
+zinit snippet https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/lscolors.sh
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 
-# ls & cd
-zstyle ':fzf-tab:complete:ls:*' fzf-preview $FZF_PREVIEW
-zstyle ':fzf-tab:complete:cd:*' fzf-preview $FZF_PREVIEW
-zstyle ':fzf-tab:complete:j:*' fzf-preview $FZF_PREVIEW
+# Use FZF for completion
+source "$ZSH_CONFIG/fzf-tab-completion.zsh"
 
-# cat & bat
-zstyle ':fzf-tab:complete:cat:*' fzf-preview $FZF_PREVIEW
-zstyle ':fzf-tab:complete:bat:*' fzf-preview $FZF_PREVIEW
-
-# editors
-zstyle ':fzf-tab:complete:nano:*' fzf-preview $FZF_PREVIEW
-zstyle ':fzf-tab:complete:vim:*' fzf-preview $FZF_PREVIEW
-zstyle ':fzf-tab:complete:nvim:*' fzf-preview $FZF_PREVIEW
+# Misc
+setopt extendedglob
 
 # Load completions engine
 autoload -Uz compinit
 compinit -d ${ZSH_CACHE}/zcompdump
 zinit cdreplay -q
-
-# Misc
-setopt extendedglob
-
