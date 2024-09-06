@@ -1,5 +1,7 @@
 # The modular, feature rich tmux config
 
+[![Short demo video](https://img.youtube.com/vi/Cr95GSYkqXw/0.jpg)](https://www.youtube.com/watch?v=Cr95GSYkqXw)
+
 This config is my attempt at a fully featured, modular tmux config that's pleasant
 to customize and understand. This config uses no hard-coded paths and relies soley on
 the freedesktop environmental variables (`$XDG_*`), or `$HOME` as a fallback, with similar
