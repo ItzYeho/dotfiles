@@ -77,9 +77,13 @@ Keybind | Action | Source
 ------- | ------ | ------
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>,</kdb> | Move window left | tmux-pain-control
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>.</kbd> | Move window right | tmux-pain-control
+<kbd>prefix</kbd> + <kbd>Meta</kbd> + <kbd>s</kbd> | Create a new nested session | me
+<kbd>Meta</kbd> + <kbd>↑</kbd> | Jump one step deeper into a nested session | tmux-matryoshka
+<kbd>Meta</kbd> + <kbd>↓</kbd> | Jump one step out of a nested session | tmux-matryoshka
+<kbd>Meta</kbd> + <kbd>r</kbd> | Reset nested scope (go to outer most session) | tmux-matryoshka
 <kbd>Meta</kbd> + <kbd>,</kbd> | Select previous window | me
 <kbd>Meta</kbd> + <kbd>.</kbd> | Select next window | me
-<kbd>prefix</kbd> + <kbd>t</kbd> | Open session manager | tmux-tea
+<kbd>prefix</kbd> + <kbd>Ctrl</kbd> + <kbd>t</kbd> | Open session manager | tmux-tea
 <kbd>prefix</kbd> + <kbd>Ctrl</kbd> + <kbd>s</kbd> | Save session | tmux-resurrect
 <kbd>prefix</kbd> + <kbd>Ctrl</kbd> + <kbd>r</kbd> | Restore session | tmux-resurrect
 
