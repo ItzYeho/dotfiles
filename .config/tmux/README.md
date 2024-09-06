@@ -153,6 +153,7 @@ Keybind | Action | Source
 - [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) (save & restore tmux sessions)
 - [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum) (restore tmux sessions automatically)
 - [tmux-tea](https://github.com/2KAbhishek/tmux-tea) (fast session manager with fzf and previews)
+- [tmux-matryoshka](https://github.com/niqodea/tmux-matryoshka) (nested session management)
 
 
 ### Pane Control
