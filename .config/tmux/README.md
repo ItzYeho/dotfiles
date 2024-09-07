@@ -1,6 +1,6 @@
 # The modular, feature rich tmux config
 
-[![Short demo video](https://img.youtube.com/vi/Cr95GSYkqXw/0.jpg)](https://www.youtube.com/watch?v=Cr95GSYkqXw)
+[![Demo with Asciinema](https://asciinema.org/a/JReppDntsDc6nGyEFs4AcrGut.svg)](https://asciinema.org/a/JReppDntsDc6nGyEFs4AcrGut)
 
 This config is my attempt at a fully featured, modular tmux config that's pleasant
 to customize and understand. This config uses no hard-coded paths and relies soley on
