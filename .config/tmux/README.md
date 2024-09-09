@@ -14,6 +14,7 @@ This config was made for Linux systems in mind. It may work for Macs and Windows
 Thank you to all the plugin devs for making the following possible:
 - Fully modular with no hard coded paths
 - Fast copying & opening of any content
+- Nested session support
 - Full FZF history search
 - Smart session management
 - Smart mouse support
@@ -77,7 +78,7 @@ Keybind | Action | Source
 
 Keybind | Action | Source
 ------- | ------ | ------
-<kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>,</kdb> | Move window left | tmux-pain-control
+<kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>,</kbd> | Move window left | tmux-pain-control
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>.</kbd> | Move window right | tmux-pain-control
 <kbd>prefix</kbd> + <kbd>Meta</kbd> + <kbd>s</kbd> | Create a new nested session | me
 <kbd>Meta</kbd> + <kbd>↑</kbd> | Jump one step deeper into a nested session | tmux-matryoshka
@@ -115,15 +116,15 @@ Keybind | Action
 
 Keybind | Action | Source
 ------- | ------ | ------
-<kbd>o</kdb> | Open selected URI | tmux-open
-<kbd>Ctrl</kdb> + <kdb>o</kdb> | Edit selected file in `$EDITOR` | tmux-open
-<kbd>Shift</kdb> + <kdb>o</kdb> | Search selected text in Google | tmux-open
+<kbd>o</kbd> | Open selected URI | tmux-open
+<kbd>Ctrl</kbd> + <kbd>o</kbd> | Edit selected file in `$EDITOR` | tmux-open
+<kbd>Shift</kbd> + <kbd>o</kbd> | Search selected text in Google | tmux-open
 <kbd>Ctrl</kbd> + <kbd>v</kbd> | Toggle between line select and rectangle select | me
 <kbd>s</kbd> | Jump to on-screen text with easymotion | tmux-copy-toolkit
 
 ### Screenshots, Logging & History
 
-Keybind | Action | Sourcestored_engine_vars
+Keybind | Action | Source
 ------- | ------ | ------
 <kbd>prefix</kbd> + <kbd>Meta</kbd> + <kbd>c</kbd> | Clear pane history | tmux-logging
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>p</kbd> | Start/stop logging | tmux-logging
