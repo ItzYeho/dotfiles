@@ -24,9 +24,9 @@ zle -C complete-files complete-word _generic
 zstyle ':completion:complete-files:*' completer _files
 
 # Completion engine settings
-zstyle ':completion:*' completer _oldlist _expand _complete _ignored _match _correct _approximate _prefix
+zstyle ':completion:*' completer _expand _complete _ignored _match _correct _approximate _prefix
 zstyle ':completion:*' matcher-list 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' 'r:|[._-]=** r:|=**' 'l:|=* r:|=*'
-zstyle ':completion:*' menu select
+zstyle ':completion:*' menu no
 
 # Color file completions like LS colors
 zinit snippet https://raw.githubusercontent.com/trapd00r/LS_COLORS/master/lscolors.sh
