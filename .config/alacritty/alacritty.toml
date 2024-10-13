@@ -1,0 +1,10 @@
+[general]
+import = [
+	"./theme.toml"
+]
+
+[font]
+size = 10.75
+
+[cursor]
+style = {shape = "Beam", blinking="On"}
