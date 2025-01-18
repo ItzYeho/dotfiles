@@ -1,12 +1,12 @@
-[submodule ".vim/pack/plugins/start/fugitive"]
-	path = .vim/pack/plugins/start/fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-[submodule ".vim/pack/plugins/start/vim-airline"]
-	path = .vim/pack/plugins/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
-[submodule ".vim/pack/plugins/start/vim-polyglot"]
-	path = .vim/pack/plugins/start/vim-polyglot
-	url = https://github.com/sheerun/vim-polyglot.git
-[submodule ".vim/pack/plugins/start/nerdtree"]
-	path = .vim/pack/plugins/start/nerdtree
-	url = https://github.com/preservim/nerdtree.git
+[submodule ".config/vim/pack/plugins/start/fugitive"]
+	path = .config/vim/pack/plugins/start/fugitive
+	url = https://github.com/tpope.config/vim-fugitive.git
+[submodule ".config/vim/pack/plugins/start.config/vim-airline"]
+	path = .config/vim/pack/plugins/start.config/vim-airline
+	url = https://github.com.config/vim-airline.config/vim-airline.git
+[submodule ".config/vim/pack/plugins/start.config/vim-polyglot"]
+	path = .config/vim/pack/plugins/start.config/vim-polyglot
+	url = https://github.com/sheerun.config/vim-polyglot.git
+[submodule ".config/vim/pack/plugins/start/nerdtree"]
+	path = .config/vim/pack/plugins/start/nerdtree
+	url = https://github.com/prese.config/vim/nerdtree.git
