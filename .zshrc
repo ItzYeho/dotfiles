@@ -25,7 +25,7 @@ source "${ZSH_CONFIG}/misc.zsh"        # Miscellaneous configs
 
 # Shell third-party integrations
 eval "$(fzf --zsh)"
-eval "$(zoxide init zsh --cmd j)"
+eval "$(zoxide init zsh --cmd cd)"
 
 # Syntax highlighter needs to be sourced at the end
 zinit light zsh-users/zsh-syntax-highlighting
