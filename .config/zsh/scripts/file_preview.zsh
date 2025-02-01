@@ -12,5 +12,9 @@ elif [[ "$category" = "image" ]]; then
     exiftool "$path"
 elif [[ "$category" = "text" ]]; then
     bat -pp --color=always --line-range=:500 "$path"
+elif [[ "$kind" = "json" ]]; then
+		jq . "$path" | bat -pp --color=always --line-range=:500 -l json
+else
+		file "$path" | fold -w 80 -s
 fi
 
