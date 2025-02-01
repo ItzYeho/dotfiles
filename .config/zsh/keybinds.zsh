@@ -8,8 +8,6 @@ select-word-style bash
 # Basic bash-like line navigation & editing
 bindkey '^[[1;5C' forward-word                 # Ctrl+Right
 bindkey '^[[1;5D' backward-word                # Ctrl+Left
-bindkey '^[[1;3C' forward-word                 # Alt+Left
-bindkey '^[[1;3D' backward-word                # Alt+Left
 bindkey '^[[1~' beginning-of-line              # Home
 bindkey '^[[H' beginning-of-line               # Home (Alternative)
 bindkey '^[[4~' end-of-line                    # End
