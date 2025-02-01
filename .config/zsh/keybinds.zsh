@@ -11,7 +11,7 @@ bindkey '^[[4~' end-of-line                    # End
 bindkey '^[[5~' beginning-of-buffer-or-history # Page Up
 bindkey '^[[6~' end-of-buffer-or-history       # Page Down
 bindkey '^[[3~' delete-char                    # Del
-bindkey '5~' kill-word                         # Ctrl+Del
+bindkey '^[[3;5~' kill-word                    # Ctrl+Del
 bindkey '^H' backward-kill-word                # Ctrl+Backspace
 
 # History navigation
