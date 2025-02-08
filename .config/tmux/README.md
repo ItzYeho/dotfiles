@@ -53,13 +53,13 @@ Note the following:
 Keybind | Action | Source
 ------- | ------ | ------
 <kbd>prefix</kbd> + (<kbd>h</kbd> / <kbd>Ctrl</kbd> + <kbd>h</kbd>) | Select pane to the left | tmux-pain-control
-<kbd>Meta</kbd> + <kbd>h</kbd> | Select pane to the left | me
+<kbd>Meta</kbd> + <kbd>h</kbd>/<kbd>←</kbd> | Select pane to the left | me
 <kbd>prefix</kbd> + (<kbd>j</kbd> / <kbd>Ctrl</kbd> + <kbd>j</kbd>) | Select pane below | tmux-pain-control
-<kbd>Meta</kbd> + <kbd>j</kbd> | Select pane below | me
+<kbd>Meta</kbd> + <kbd>j</kbd>/<kbd>↓</kbd> | Select pane below | me
 <kbd>prefix</kbd> + (<kbd>k</kbd> / <kbd>Ctrl</kbd> + <kbd>k</kbd>) | Select pane above | tmux-pain-control
-<kbd>Meta</kbd> + <kbd>k</kbd> | Select pane above | me
+<kbd>Meta</kbd> + <kbd>k</kbd>/<kbd>↑</kbd> | Select pane above | me
 <kbd>prefix</kbd> + (<kbd>l</kbd> / <kbd>Ctrl</kbd> + <kbd>l</kbd>) | Select pane to the right | tmux-pain-control
-<kbd>Meta</kbd> + <kbd>l</kbd> | Select pane to the right | me
+<kbd>Meta</kbd> + <kbd>l</kbd>/<kbd>→</kbd> | Select pane to the right | me
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>h</kbd> | Resize pane 2 cells to the left | tmux-pain-control
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>j</kbd> | Resize pane 2 cells down | tmux-pain-control
 <kbd>prefix</kbd> + <kbd>Shift</kbd> + <kbd>k</kbd> | Resize pane 2 cells up | tmux-pain-control
