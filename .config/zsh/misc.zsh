@@ -1,3 +1,6 @@
+# Allow comments
+setopt interactivecomments
+
 # Bat theme
 export BAT_THEME="TwoDark"
 
