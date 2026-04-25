@@ -9,3 +9,7 @@ size = 10.75
 
 [cursor]
 style = {shape = "Beam", blinking="On"}
+
+[terminal]
+shell = "tmux"
+
