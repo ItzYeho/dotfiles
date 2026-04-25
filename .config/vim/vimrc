@@ -1,6 +1,32 @@
-" Set .viminfo file location
+" No need for compatibility with vi
 set nocompatible
-set viminfo+=n~/.vim/viminfo
+
+" Set XDG based state files
+if empty($XDG_STATE_HOME)
+  let $XDG_STATE_HOME = $HOME . '/.local/state'
+endif
+
+let s:xdg_base = $XDG_STATE_HOME . '/vim'
+
+for dir in ['swap', 'backup', 'undo', 'view']
+  call mkdir(s:xdg_base . '/' . dir, 'p')
+endfor
+
+set undofile
+execute 'set viminfofile=' . fnameescape(s:xdg_base . '/viminfo')
+execute 'set directory^=' . fnameescape(s:xdg_base . '/swap//')
+execute 'set backupdir^=' . fnameescape(s:xdg_base . '/backup//')
+execute 'set undodir^=' . fnameescape(s:xdg_base . '/undo//')
+execute 'set viewdir^=' . fnameescape(s:xdg_base . '/view//')
+
+" Jump to the last cursor position
+augroup remember_cursor
+  autocmd!
+  autocmd BufReadPost *
+        \ if line("'\"") > 0 && line("'\"") <= line("$") |
+        \   execute "normal! g`\"" |
+        \ endif
+augroup END
 
 " Status bar customizations
 let g:airline_powerline_fonts = 1
